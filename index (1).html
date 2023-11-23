@@ -1,0 +1,45 @@
+<html>
+    <head>
+
+        <script type='text/javascript' src='https://cdn.firebase.com/js/client/1.0.6/firebase.js'></script>		
+    
+        <!-- The core Firebase JS SDK is always required and must be listed first -->
+        <script src="https://www.gstatic.com/firebasejs/7.15.0/firebase-app.js"></script>
+    
+        <!-- TODO: Add SDKs for Firebase products that you want to use
+        https://firebase.google.com/docs/web/setup#available-libraries -->
+        <script src="https://www.gstatic.com/firebasejs/7.15.0/firebase-analytics.js"></script>  
+    
+        <script>
+          // Your web app's Firebase configuration
+          var firebaseConfig = {
+            apiKey: "AIzaSyADhN7edSfCeP09dOCzbdj3onPKvwcL8cQ",
+            authDomain: "biblioteca-cd474.firebaseapp.com",
+            databaseURL: "https://biblioteca-cd474-default-rtdb.firebaseio.com",
+            projectId: "biblioteca-cd474",
+            storageBucket: "biblioteca-cd474.appspot.com",
+            messagingSenderId: "59290384596",
+            appId: "1:59290384596:web:4a343985a10f8c7fab6341",
+            measurementId: "G-M4M2EMP754"
+          };
+          // Initialize Firebase
+          firebase.initializeApp(firebaseConfig);
+          firebase.analytics();
+        </script>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="consulta.js"></script>
+
+    </head>
+
+    <body>
+        <table id="tbAlunos">
+            <tr>
+                <th></th>
+                <th>Gênero</th>
+                <th>Status</th>
+                <th>Valor</th>
+            </tr>
+        </table>
+    </body>
+</html>
